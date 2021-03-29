@@ -36,7 +36,10 @@ const App = () => {
   return (
     // <WebWrapper></WebWrapper>
     <ScrollView style={{ flex: 1 }}>
-      <HTML source={{ html: htmlContent }} contentWidth={contentWidth} />
+      <HTML source={{ html: htmlContent }} contentWidth={contentWidth}
+      tagsStyles={{p: {fontSize: 24}}}
+      classesStyles={{'img': {width: '80%', height: 'auto'}}}
+      />
       <Text>Hi!</Text>
     </ScrollView>
     // <MyInlineWeb></MyInlineWeb>
